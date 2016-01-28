@@ -1,0 +1,24 @@
+{
+    "name": "emo/simple-search-api-bundle",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/emiliyank/SimpleSearchApiBundle"
+        }
+    ],
+    "type": "symfony-bundle",
+    "description": "This Bundle provides Simple Search API for Content in Files, implemented in Symfony.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emiliyan Valentinov Kadiyski",
+            "email": "e.kadiyski@gmail.com"
+        }
+    ],
+
+    "autoload":{
+        "psr-4":{
+            "Emo\\SimpleSearchApiBundle\\": ""
+        }
+    }
+}

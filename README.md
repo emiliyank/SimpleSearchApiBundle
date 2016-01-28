@@ -11,15 +11,10 @@ Installation
 Step 1: Download the Bundle
 ---------------------------
 
-Open a command console, enter your project directory and execute the
-following command to download the latest stable version of this bundle:
-
-```bash
-$ composer require <package-name> "~1"
-```
-
-This command requires you to have Composer installed globally, as explained
-in the [installation chapter](https://getcomposer.org/doc/00-intro.md)
+Download the Zip File from Github: https://github.com/emiliyank/SimpleSearchApiBundle
+Extract files and rename the main folder to 'SearchBundle'(remove '-master').
+Place the folder in 'src/Emo/'(you will have to create the folder with
+the vendor name Emo). Structure after this: 'src/Emo/SimpleSearchApiBundle/...'
 of the Composer documentation.
 
 Step 2: Enable the Bundle
@@ -49,6 +44,18 @@ class AppKernel extends Kernel
 }
 ```
 
+Step 3: Add route
+-------------------------
+In your project /config/routing.yml file add the following:
+//...
+emo_simple_search_api:
+    resource: "@EmoSimpleSearchApiBundle/Controller/"
+    type:     annotation
+    prefix:   /
+//...
+
+
+You cant test if bundle is working correct by opening: <app-name>/emo_simple_search_api_bundle
 License
 ============
 This bundle is under the MIT license. See the complete license in the bundle: LICENSE
